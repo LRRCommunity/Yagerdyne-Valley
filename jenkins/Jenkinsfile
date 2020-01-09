@@ -2,20 +2,22 @@ pipeline {
   agent {
     dockerfile {
       dir 'docker'
+      args '-e HOME=/tmp'
     }
   }
 
   stages {
     stage('Install dependencies') {
       steps {
-        echo pwd()
-        sh '/usr/bin/nuget restore'
+        sh '/usr/bin/nuget restore ./src'
       }
     }
 
     stage('Build project') {
       steps {
-        sh '/usr/bin/msbuild -p:Configuration=Release'
+        sh '/usr/bin/msbuild ./src \
+              -p:Configuration=Release \
+              -p:GamePath=/opt/stardew'
       }
     }
   }

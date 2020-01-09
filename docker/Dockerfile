@@ -8,6 +8,3 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 
 WORKDIR /opt/stardew
 COPY stardew-libs .
-
-WORKDIR /root
-COPY stardewvalley.targets .
