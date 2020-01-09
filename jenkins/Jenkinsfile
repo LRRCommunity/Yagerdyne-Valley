@@ -12,5 +12,11 @@ pipeline {
         sh '/usr/bin/nuget restore'
       }
     }
+
+    stage('Build project') {
+      steps {
+        sh '/usr/bin/msbuild -p:Configuration=Release'
+      }
+    }
   }
 }
