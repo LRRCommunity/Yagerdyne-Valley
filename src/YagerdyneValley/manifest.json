@@ -1,0 +1,10 @@
+{
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "Name": "Star-brew Valley",
+  "Version": "1.0.0-alpha",
+  "Author": "DarkMorford",
+  "Description": "Yagerdyne Industries - We make JojaMart look ethical!",
+  "EntryDll": "YagerdyneValley.dll",
+  "UniqueID": "loadingreadyrun.yagerdyne",
+  "MinimumApiVersion": "3.0.0"
+}
