@@ -1,2 +1,7 @@
-[*.{sln, csproj}]
+# Visual Studio project files
+[*.{sln,csproj}]
 charset = utf-8-bom
+
+[*.csproj]
+indent_size = 2
+insert_final_newline = false
