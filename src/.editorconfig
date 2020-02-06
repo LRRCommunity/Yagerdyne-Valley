@@ -5,3 +5,8 @@ charset = utf-8-bom
 [*.csproj]
 indent_size = 2
 insert_final_newline = false
+
+[packages.config]
+charset = utf-8-bom
+indent_size = 2
+insert_final_newline = false
